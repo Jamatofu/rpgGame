@@ -1,9 +1,19 @@
 /**
- * @author jamatofu on 03/11/16.
+ * Created by jamatofu on 26/10/16.
  */
-public class Main {
 
+import entity.*;
+import entity.spell.FireBall;
+import entity.spell.Spell;
+import motor.Motor;
+
+public class Main {
     public static void main(String[] args) {
-        int i = 0;
+        Motor motor = new Motor();
+
+        do {
+            motor.makeAction();
+        } while (!motor.isLeaveGame());
+
     }
 }
